@@ -1,0 +1,43 @@
+# prospector configuration file
+
+---
+
+bandit:
+  run: false
+
+dodgy:
+  run: true
+
+frosted:
+  run: false
+
+mccabe:
+  run: true
+
+mypy:
+  run: false
+
+pep257:
+  run: true
+  # see http://pep257.readthedocs.io/en/latest/error_codes.html
+  disable:
+    - D200
+    - D212
+    - D205
+    - D202
+
+
+pep8:
+  run: false
+
+pyflakes:
+  run: true
+
+pylint:
+  run: false
+
+pyroma:
+  run: false
+
+vulture:
+  run: false
